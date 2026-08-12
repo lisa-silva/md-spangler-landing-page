@@ -959,7 +959,7 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 960px;
-  margin: 80px auto 115px;
+  margin: 80px auto 30px;
   border-top: 1px solid rgba(255,255,255,0.16);
   border-bottom: 1px solid rgba(255,255,255,0.16);
 }
@@ -1002,6 +1002,18 @@ summary:focus-visible {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.72rem;
   line-height: 1.5;
+}
+
+.license-note {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  color: rgba(255,255,255,0.58);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.license-note a {
+  color: var(--brass-light);
 }
 
 .contact footer {
