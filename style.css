@@ -1004,6 +1004,15 @@ summary:focus-visible {
     display: none;
   }
 
+  /* Preserve the complete project photographs on narrow phone screens. */
+  .why__image img,
+  .standard__visual img,
+  .work-strip img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
   .services__grid {
     grid-template-columns: 1fr;
   }
