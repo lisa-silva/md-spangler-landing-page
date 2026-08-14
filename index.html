@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Premium residential concrete built to engineering standards. MD Spangler Concrete serves homeowners across Shasta, Tehama, and Butte counties.">
+  <meta name="description" content="MD Spangler Concrete is a residential concrete contractor serving homeowners across Shasta, Tehama, and Butte Counties. Call or text (530) 917-5727 for an estimate.">
   <link rel="canonical" href="https://md-spangler-concrete.netlify.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MD Spangler Concrete">
@@ -20,14 +20,21 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["GeneralContractor", "LocalBusiness"],
+        "@type": ["GeneralContractor", "LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://md-spangler-concrete.netlify.app/#business",
         "name": "MD Spangler Concrete",
         "url": "https://md-spangler-concrete.netlify.app/",
+        "image": "https://md-spangler-concrete.netlify.app/images/md-spangler-large-concrete-pour.webp",
         "telephone": "+1-530-917-5727",
         "email": "melsconcrete@icloud.com",
         "slogan": "Concrete Built to Engineering Standards",
-        "description": "MD Spangler Concrete provides engineering‑grade residential concrete services across Shasta, Tehama, and Butte Counties. With over 40 years of experience, the company specializes in stamped concrete, driveways, walkways, patios, foundations, metal building slabs, and precision concrete finishing. Homeowners choose MD Spangler Concrete when quality and long‑lasting results matter.",
+        "description": "MD Spangler Concrete is a residential concrete contractor serving Shasta, Tehama, and Butte Counties. The company provides concrete driveways, patios, walkways, slabs, foundations, stamped concrete, repairs, and custom concrete work for homeowners in Redding, Anderson, Cottonwood, Red Bluff, Corning, Chico, Oroville, and surrounding Northern California communities.",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "California Contractor License",
+          "propertyID": "California Contractor License",
+          "value": "598557"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "2521 Hilltop Dr",
@@ -39,7 +46,14 @@
         "areaServed": [
           {"@type": "AdministrativeArea", "name": "Shasta County"},
           {"@type": "AdministrativeArea", "name": "Tehama County"},
-          {"@type": "AdministrativeArea", "name": "Butte County"}
+          {"@type": "AdministrativeArea", "name": "Butte County"},
+          {"@type": "City", "name": "Redding, California"},
+          {"@type": "City", "name": "Anderson, California"},
+          {"@type": "City", "name": "Cottonwood, California"},
+          {"@type": "City", "name": "Red Bluff, California"},
+          {"@type": "City", "name": "Corning, California"},
+          {"@type": "City", "name": "Chico, California"},
+          {"@type": "City", "name": "Oroville, California"}
         ],
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -47,15 +61,20 @@
           "opens": "08:00",
           "closes": "20:00"
         },
-        "knowsAbout": [
-          "Stamped concrete",
-          "Concrete driveways",
-          "Concrete walkways",
-          "Concrete patios",
-          "Concrete foundations",
-          "Metal-building concrete slabs",
-          "Concrete finishing"
-        ]
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Residential concrete services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete driveways"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete patios"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete walkways"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete slabs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete foundations"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stamped concrete"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Concrete repairs"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Custom concrete flatwork"}}
+          ]
+        }
       },
       {
         "@type": "FAQPage",
@@ -122,7 +141,7 @@
         <p class="hero__area">Serving Shasta, Tehama &amp; Butte Counties</p>
         <p class="hero__services">Stamped Concrete <span>•</span> Driveways <span>•</span> Walkways <span>•</span> Patios <span>•</span> Foundations <span>•</span> Metal Building Slabs <span>•</span> Concrete Finishing</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#contact">Request a Consultation <span aria-hidden="true">→</span></a>
+          <a class="button button--primary" href="#contact">Request a Free Estimate <span aria-hidden="true">→</span></a>
         </div>
       </div>
 
@@ -137,7 +156,7 @@
         <div class="why__copy">
           <p class="eyebrow eyebrow--dark">Why homeowners choose MD Spangler Concrete</p>
           <h2 id="why-title">Premium Residential Concrete, <em>Built to Last</em></h2>
-          <p class="lead">Homeowners hire MD Spangler Concrete because they want work done right the first time — with engineering-grade precision, clean finishes, and durability that holds up for decades.</p>
+          <p class="lead">MD Spangler Concrete serves homeowners throughout Shasta, Tehama, and Butte Counties with quality residential concrete work. From driveways, patios, walkways, and stamped concrete to slabs, foundations, repairs, and custom flatwork, we deliver durable work with clean finishes and clear communication.</p>
           <p>Mel brings 40+ years of hands-on concrete experience to every project.</p>
           <p>Stamped patios, driveway replacements, walkways, foundations — every pour gets the same structural accuracy and finish quality.</p>
           <p class="why__statement">This is premium residential concrete, not “contractor roulette.”</p>
@@ -256,7 +275,7 @@
 
         <div class="contact__details">
           <div>
-            <p>Call directly</p>
+            <p>Call or text</p>
             <a href="tel:+15309175727">530-917-5727</a>
           </div>
           <div>
@@ -264,14 +283,14 @@
             <a href="mailto:melsconcrete@icloud.com">melsconcrete@icloud.com</a>
           </div>
           <div>
-            <p>Business address</p>
-            <address>2521 Hilltop Dr<br>Redding, CA 96002<span class="contact__service-area">Not a customer-visit location.</span></address>
+            <p>Business address &amp; service area</p>
+            <address>2521 Hilltop Dr<br>Redding, CA 96002<span class="contact__service-area">Serving homeowners across Shasta, Tehama &amp; Butte Counties, including Redding, Anderson, Cottonwood, Red Bluff, Corning, Chico, Oroville, and surrounding communities.</span></address>
           </div>
         </div>
 
         <div class="contact__facts">
           <p><strong>Hours</strong><span>Monday–Saturday: 8:00 AM–8:00 PM</span><span>Sunday: Closed</span></p>
-          <p><strong>California Contractor License</strong><span>No. 598557 — A (General Engineering) and C-8 (Concrete)</span><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/LicenseDetail.aspx?LicNum=598557" rel="noopener">Verify current license status</a></p>
+          <p><strong>California Contractor License</strong><span>No. 598557 — A (General Engineering) and C-8 (Concrete)</span></p>
         </div>
 
         <footer>
@@ -279,7 +298,7 @@
             <span class="brand__mark">MD</span>
             <span class="brand__name">Spangler <b>Concrete</b></span>
           </a>
-          <p>Premium residential concrete built to engineering standards.<br>Stamped concrete, driveways, patios, walkways, foundations, slabs, and finishing — serving Shasta, Tehama &amp; Butte Counties.</p>
+          <p>MD Spangler Concrete | California Contractor License #598557 | (530) 917-5727 | Serving Shasta, Tehama &amp; Butte Counties</p>
         </footer>
       </div>
     </section>
