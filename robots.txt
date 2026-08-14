@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://md-spangler-concrete.netlify.app/sitemap.xml
