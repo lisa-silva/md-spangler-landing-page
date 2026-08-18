@@ -5,16 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="ZQxQ1ObmYijelVkwQ7bNij7y74NMYUYoRp8BCRymZvo">
-  <meta name="description" content="MD Spangler Concrete is a residential concrete contractor serving all of Northern California, primarily Shasta, Tehama, and Butte Counties. Call or text (530) 917-5727 for an estimate.">
+  <meta name="description" content="Licensed Redding concrete contractor MD Spangler Concrete provides foundations, driveways, walkways, commercial and structural concrete across Northern California.">
   <link rel="canonical" href="https://md-spangler-concrete.netlify.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="MD Spangler Concrete">
-  <meta property="og:title" content="MD Spangler Concrete | Concrete Built to Engineering Standards">
-  <meta property="og:description" content="Stamped concrete, driveways, walkways, patios, foundations, metal-building slabs, and concrete finishing throughout Northern California.">
+  <meta property="og:title" content="Concrete Contractor in Redding, CA | MD Spangler Concrete">
+  <meta property="og:description" content="Licensed residential and commercial concrete contractor serving Redding and Northern California with 40+ years of hands-on experience.">
   <meta property="og:url" content="https://md-spangler-concrete.netlify.app/">
   <meta property="og:image" content="https://md-spangler-concrete.netlify.app/images/md-spangler-large-concrete-pour.webp">
   <meta property="og:image:alt" content="MD Spangler Concrete crew completing a large concrete pour in Northern California.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Concrete Contractor in Redding, CA | MD Spangler Concrete">
+  <meta name="twitter:description" content="Licensed residential and commercial concrete contractor serving Redding and Northern California with 40+ years of hands-on experience.">
   <meta name="twitter:image" content="https://md-spangler-concrete.netlify.app/images/md-spangler-large-concrete-pour.webp">
   <meta name="twitter:image:alt" content="MD Spangler Concrete crew completing a large concrete pour in Northern California.">
   <script type="application/ld+json">
@@ -22,11 +24,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "HomeAndConstructionBusiness",
+        "@type": ["HomeAndConstructionBusiness", "LocalBusiness"],
         "@id": "https://md-spangler-concrete.netlify.app/#business",
         "name": "MD Spangler Concrete",
+        "alternateName": [
+          "MD SPANGLER",
+          "Spangler Concrete & Engineering, Inc."
+        ],
         "url": "https://md-spangler-concrete.netlify.app/",
         "telephone": "+1-530-917-5727",
+        "email": "melsconcrete@icloud.com",
+        "foundingDate": "1990",
+        "founder": {
+          "@type": "Person",
+          "name": "Melvin Dan Spangler"
+        },
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "CSLB License",
+          "value": "598557"
+        },
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "2521 Hill Top Drive",
@@ -36,22 +53,83 @@
           "addressCountry": "US"
         },
         "areaServed": [
-          "Northern California",
-          "Redding, CA",
-          "Anderson, CA",
-          "Cottonwood, CA",
-          "Red Bluff, CA",
-          "Corning, CA",
-          "Chico, CA",
-          "Oroville, CA",
-          "Shasta County, CA",
-          "Tehama County, CA",
-          "Butte County, CA"
+          { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" },
+          { "@id": "https://md-spangler-concrete.netlify.app/#primary-service-area" }
         ],
-        "description": "Residential concrete contractor serving all of Northern California, primarily Shasta, Tehama, and Butte Counties. Services include driveways, patios, stamped concrete, slabs, foundations, repairs, and custom concrete work.",
+        "description": "Licensed residential and commercial concrete contractor led by Melvin Dan Spangler and serving Northern California. MD Spangler Concrete operates under CSLB License #598557 with A General Engineering and C-8 Concrete classifications.",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Concrete Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@id": "https://md-spangler-concrete.netlify.app/#foundations" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://md-spangler-concrete.netlify.app/#driveways" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://md-spangler-concrete.netlify.app/#walkways" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://md-spangler-concrete.netlify.app/#commercial-concrete" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://md-spangler-concrete.netlify.app/#structural-concrete" } }
+          ]
+        },
         "sameAs": [
           "https://www.facebook.com/p/MD-Spangler-Concrete-61561249078327/"
         ]
+      },
+      {
+        "@type": "AdministrativeArea",
+        "@id": "https://md-spangler-concrete.netlify.app/#northern-california",
+        "name": "Northern California"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "@id": "https://md-spangler-concrete.netlify.app/#primary-service-area",
+        "name": "Shasta, Tehama, and Butte Counties",
+        "containsPlace": [
+          { "@type": "City", "name": "Redding" },
+          { "@type": "City", "name": "Anderson" },
+          { "@type": "City", "name": "Cottonwood" },
+          { "@type": "City", "name": "Red Bluff" },
+          { "@type": "City", "name": "Corning" },
+          { "@type": "City", "name": "Chico" },
+          { "@type": "City", "name": "Oroville" }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://md-spangler-concrete.netlify.app/#foundations",
+        "name": "Concrete Foundations",
+        "description": "Load-bearing concrete foundations for homes, additions, shops, and other structures.",
+        "provider": { "@id": "https://md-spangler-concrete.netlify.app/#business" },
+        "areaServed": { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://md-spangler-concrete.netlify.app/#driveways",
+        "name": "Concrete Driveways",
+        "description": "Durable concrete driveways designed for daily vehicle loads, drainage, clean transitions, and curb appeal.",
+        "provider": { "@id": "https://md-spangler-concrete.netlify.app/#business" },
+        "areaServed": { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://md-spangler-concrete.netlify.app/#walkways",
+        "name": "Concrete Walkways",
+        "description": "Safe concrete walkways with precise grading, smooth transitions, clean edges, and dependable performance.",
+        "provider": { "@id": "https://md-spangler-concrete.netlify.app/#business" },
+        "areaServed": { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://md-spangler-concrete.netlify.app/#commercial-concrete",
+        "name": "Commercial Concrete",
+        "description": "Commercial slabs, flatwork, site improvements, and load-ready working surfaces.",
+        "provider": { "@id": "https://md-spangler-concrete.netlify.app/#business" },
+        "areaServed": { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://md-spangler-concrete.netlify.app/#structural-concrete",
+        "name": "Structural Concrete",
+        "description": "Structural concrete work with careful reinforcement, accurate placement, and attention to load-bearing requirements.",
+        "provider": { "@id": "https://md-spangler-concrete.netlify.app/#business" },
+        "areaServed": { "@id": "https://md-spangler-concrete.netlify.app/#northern-california" }
       },
       {
         "@type": "FAQPage",
@@ -70,7 +148,7 @@
             "name": "Do you work with homeowners?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Most projects are residential, and homeowners appreciate the speed, quality, and clarity."
+              "text": "Yes. MD Spangler Concrete completes both residential and commercial concrete projects with clear communication and precise workmanship."
             }
           },
           {
@@ -78,7 +156,7 @@
             "name": "What types of projects do you take?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Stamped concrete, driveways, patios, walkways, foundations, slabs, and finishing."
+              "text": "Foundations, driveways, walkways, commercial concrete, structural concrete, decorative concrete, slabs, patios, and custom flatwork."
             }
           },
           {
@@ -94,7 +172,7 @@
     ]
   }
   </script>
-  <title>MD Spangler Concrete | Concrete Built to Engineering Standards</title>
+  <title>Concrete Contractor in Redding, CA | MD Spangler Concrete</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -116,7 +194,7 @@
         <h1 id="hero-title">Concrete Built to<br><em>Engineering Standards</em></h1>
         <p class="hero__lead">When quality matters, precision is everything.</p>
         <p class="hero__area">Serving All of Northern California</p>
-        <p class="hero__services">Stamped Concrete <span>•</span> Driveways <span>•</span> Walkways <span>•</span> Patios <span>•</span> Foundations <span>•</span> Metal Building Slabs <span>•</span> Concrete Finishing</p>
+        <p class="hero__services">Foundations <span>•</span> Driveways <span>•</span> Walkways <span>•</span> Commercial Concrete <span>•</span> Structural Concrete</p>
         <div class="hero__actions">
           <a class="button button--primary" href="#contact">Request a Free Estimate <span aria-hidden="true">→</span></a>
         </div>
@@ -128,15 +206,15 @@
       </div>
     </section>
 
-    <section class="why section-pad" aria-labelledby="why-title">
+    <section class="why section-pad" id="about" aria-labelledby="about-title">
       <div class="section-shell why__grid">
         <div class="why__copy">
-          <p class="eyebrow eyebrow--dark">Why homeowners choose MD Spangler Concrete</p>
-          <h2 id="why-title">Premium Residential Concrete, <em>Built to Last</em></h2>
-          <p class="lead">MD Spangler Concrete serves homeowners throughout Northern California, primarily in Shasta, Tehama, and Butte Counties, with quality residential concrete work. From driveways, patios, walkways, and stamped concrete to slabs, foundations, repairs, and custom flatwork, we deliver durable work with clean finishes and clear communication.</p>
-          <p>Mel brings 40+ years of hands-on concrete experience to every project.</p>
-          <p>Stamped patios, driveway replacements, walkways, foundations — every pour gets the same structural accuracy and finish quality.</p>
-          <p class="why__statement">This is premium residential concrete, not “contractor roulette.”</p>
+          <p class="eyebrow eyebrow--dark">About MD Spangler Concrete</p>
+          <h2 id="about-title">One Contractor. <em>One Continuous Professional Lineage.</em></h2>
+          <p class="lead">MD Spangler Concrete is a licensed Northern California concrete contractor led by Melvin Dan Spangler, who has operated under CSLB License #598557 since 1990 with dual A (General Engineering) and C-8 (Concrete) classifications.</p>
+          <p>The company’s history includes its earlier corporate identity, Spangler Concrete &amp; Engineering, Inc., which Mel ran while serving clients across Sunnyvale, Morgan Hill, Santa Rosa, and the greater Bay Area.</p>
+          <p>Today, MD Spangler Concrete continues that same professional lineage in Redding, delivering high-quality residential and commercial concrete work backed by more than 40 years of hands-on experience. With a long-standing reputation for reliability, engineering-grade standards, and precise workmanship, MD Spangler Concrete provides trusted concrete solutions throughout Shasta, Tehama, and Butte Counties.</p>
+          <p class="why__statement"><strong>One continuous identity:</strong> “MD SPANGLER” is the CSLB license name, “MD Spangler Concrete” is the current marketing name, and “Spangler Concrete &amp; Engineering, Inc.” is the earlier corporate identity—all part of Melvin Dan Spangler’s continuous owner-operated business history.</p>
         </div>
         <figure class="why__image">
           <img src="images/md-spangler-concrete-hand-finishing.webp" alt="MD Spangler Concrete workers hand-finishing a freshly poured concrete slab." width="1600" height="1200" loading="lazy" decoding="async">
@@ -153,13 +231,13 @@
         </div>
 
         <div class="services__grid">
-          <article><span>01</span><h3>Stamped Concrete</h3><p>Premium decorative concrete with engineering-grade base preparation and flawless finishing.</p></article>
-          <article><span>02</span><h3>Driveways</h3><p>Long-lasting, load-ready driveways built to handle real-world use.</p></article>
-          <article><span>03</span><h3>Walkways</h3><p>Clean, safe, durable walkways with precise edges and smooth transitions.</p></article>
-          <article><span>04</span><h3>Patios</h3><p>Outdoor living spaces built with structural integrity and beautiful finishes.</p></article>
-          <article><span>05</span><h3>Foundations</h3><p>Accurate, level, load-bearing foundations for sheds, additions, and residential structures.</p></article>
-          <article><span>06</span><h3>Metal Building Slabs</h3><p>Precision slabs for shops, barns, and metal buildings — built to engineering standards.</p></article>
-          <article><span>07</span><h3>Concrete Finishing</h3><p>Hand-finished surfaces with the kind of detail only decades of experience can produce.</p></article>
+          <article id="foundations"><span>01</span><h3>Foundations</h3><p>Accurate, level, load-bearing concrete foundations for homes, additions, shops, and other structures, prepared and poured to exacting standards.</p></article>
+          <article id="driveways"><span>02</span><h3>Driveways</h3><p>Durable concrete driveways designed for daily vehicle loads, proper drainage, clean transitions, and lasting curb appeal.</p></article>
+          <article id="walkways"><span>03</span><h3>Walkways</h3><p>Safe, attractive concrete walkways with precise grading, smooth transitions, clean edges, and dependable long-term performance.</p></article>
+          <article id="commercial-concrete"><span>04</span><h3>Commercial Concrete</h3><p>Professional concrete construction for commercial properties, including slabs, flatwork, site improvements, and load-ready working surfaces.</p></article>
+          <article id="structural-concrete"><span>05</span><h3>Structural Concrete</h3><p>Engineering-informed structural concrete work completed with careful reinforcement, accurate placement, and attention to load-bearing requirements.</p></article>
+          <article><span>06</span><h3>Stamped &amp; Decorative Concrete</h3><p>Custom patios, entries, and outdoor surfaces that combine durable base preparation with attractive textures and detailed finishing.</p></article>
+          <article><span>07</span><h3>Slabs &amp; Custom Flatwork</h3><p>Precision slabs and hand-finished concrete for metal buildings, shops, patios, repairs, and one-of-a-kind residential or commercial projects.</p></article>
         </div>
 
         <div class="work-strip" aria-label="Actual MD Spangler Concrete project photographs">
@@ -177,21 +255,56 @@
             <img src="images/md-spangler-large-concrete-pour.webp" alt="Large concrete placement in progress on an MD Spangler Concrete project." width="1600" height="1200" loading="lazy" decoding="async">
             <figcaption>Precision placement — actual MD Spangler Concrete work.</figcaption>
           </figure>
-          <div class="standard__badge"><strong>3</strong><span>Generations</span></div>
         </div>
         <div class="standard__copy">
-          <p class="eyebrow">The MD Spangler standard</p>
-          <h2 id="standard-title">Three Generations. Forty Years. <em>One Rule: Do It Right the First Time.</em></h2>
-          <p>Mel learned concrete the way real craftsmen do — by doing it every day, for decades.</p>
-          <p>His work is known for:</p>
+          <p class="eyebrow">Why choose us</p>
+          <h2 id="standard-title">Built on Experience. <em>Delivered With Precision.</em></h2>
+          <p>MD Spangler Concrete combines decades of field experience with licensed engineering and concrete expertise.</p>
           <ul class="check-list">
-            <li>Structural accuracy</li>
-            <li>Clean edges</li>
-            <li>Flawless finishing</li>
-            <li>Zero shortcuts</li>
-            <li>Long-term durability</li>
+            <li>CSLB License #598557 since 1990</li>
+            <li>Dual A and C-8 classifications</li>
+            <li>40+ years of hands-on experience</li>
+            <li>Residential and commercial expertise</li>
+            <li>Engineering-grade standards</li>
+            <li>Clear, responsive communication</li>
+            <li>Precise workmanship and clean finishes</li>
+            <li>Northern California service coverage</li>
           </ul>
-          <p class="standard__closing">Homeowners choose MD Spangler Concrete because they want premium work, not patch jobs.</p>
+          <p class="standard__closing">Reliable concrete solutions from one experienced owner/operator and one continuous professional business lineage.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="before-after section-pad" aria-labelledby="before-after-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <p class="eyebrow eyebrow--dark">Project transformations</p>
+          <h2 id="before-after-title">Before &amp; After <em>Project Gallery</em></h2>
+          <p class="section-heading__lead">Project comparison photos are coming soon. These spaces are ready for completed MD Spangler Concrete transformations.</p>
+        </div>
+
+        <div class="before-after__grid">
+          <article class="comparison-card">
+            <h3>Driveway Transformation</h3>
+            <div class="comparison-card__images">
+              <div class="image-placeholder" role="img" aria-label="Placeholder for driveway before photograph"><span>Before</span><p>Photo coming soon</p></div>
+              <div class="image-placeholder" role="img" aria-label="Placeholder for driveway after photograph"><span>After</span><p>Photo coming soon</p></div>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Patio &amp; Walkway Project</h3>
+            <div class="comparison-card__images">
+              <div class="image-placeholder" role="img" aria-label="Placeholder for patio and walkway before photograph"><span>Before</span><p>Photo coming soon</p></div>
+              <div class="image-placeholder" role="img" aria-label="Placeholder for patio and walkway after photograph"><span>After</span><p>Photo coming soon</p></div>
+            </div>
+          </article>
+          <article class="comparison-card">
+            <h3>Foundation or Slab Project</h3>
+            <div class="comparison-card__images">
+              <div class="image-placeholder" role="img" aria-label="Placeholder for foundation or slab before photograph"><span>Before</span><p>Photo coming soon</p></div>
+              <div class="image-placeholder" role="img" aria-label="Placeholder for foundation or slab after photograph"><span>After</span><p>Photo coming soon</p></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -212,6 +325,9 @@
           <li>Surrounding Communities</li>
         </ul>
         <p class="service-area__closing">Primarily serving Shasta, Tehama, and Butte Counties, Mel’s crew is available for projects throughout Northern California.</p>
+        <div class="service-area__map">
+          <iframe title="Map of MD Spangler Concrete service area centered on Redding, California" src="https://www.google.com/maps?q=Redding%2C%20CA&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
       </div>
     </section>
 
@@ -255,11 +371,11 @@
           </details>
           <details>
             <summary><span>02</span>Do you work with homeowners?</summary>
-            <div class="faq__answer"><p>Yes — most projects are residential, and homeowners appreciate the speed, quality, and clarity.</p></div>
+            <div class="faq__answer"><p>Yes — MD Spangler Concrete completes both residential and commercial concrete projects with clear communication and precise workmanship.</p></div>
           </details>
           <details>
             <summary><span>03</span>What types of projects do you take?</summary>
-            <div class="faq__answer"><p>Stamped concrete, driveways, patios, walkways, foundations, slabs, and finishing.</p></div>
+            <div class="faq__answer"><p>Foundations, driveways, walkways, commercial concrete, structural concrete, decorative concrete, slabs, patios, and custom flatwork.</p></div>
           </details>
           <details>
             <summary><span>04</span>How soon can you start?</summary>
@@ -303,6 +419,11 @@
             <span class="brand__name">Spangler <b>Concrete</b></span>
           </a>
           <p>MD Spangler Concrete | 2521 Hill Top Drive, Redding, CA 96002 | Call/Text (530) 917-5727 | California Contractor License #598557<br>Serving all of Northern California, primarily Shasta, Tehama &amp; Butte Counties</p>
+          <ul class="footer-trust" aria-label="Verified contractor trust signals">
+            <li>$25,000 Contractor’s Bond — Great American Alliance Insurance Company</li>
+            <li>Active Workers’ Compensation Insurance — Markel Insurance Company</li>
+            <li>No CSLB Disciplinary Actions or Complaints on File</li>
+          </ul>
         </footer>
       </div>
     </section>

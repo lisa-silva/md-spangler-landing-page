@@ -336,6 +336,7 @@ summary:focus-visible {
 
 .why h2,
 .services h2,
+.before-after h2,
 .service-area h2,
 .faq h2 {
   margin-bottom: 32px;
@@ -345,6 +346,7 @@ summary:focus-visible {
 
 .why h2 em,
 .services h2 em,
+.before-after h2 em,
 .service-area h2 em,
 .faq h2 em {
   color: #8b622b;
@@ -418,6 +420,12 @@ summary:focus-visible {
 
 .section-heading .eyebrow {
   justify-content: center;
+}
+
+.section-heading__lead {
+  max-width: 700px;
+  margin: -45px auto 0;
+  color: #5c5b52;
 }
 
 .services__grid {
@@ -525,35 +533,6 @@ summary:focus-visible {
   color: rgba(255,255,255,0.53);
 }
 
-.standard__badge {
-  position: absolute;
-  right: -22px;
-  bottom: 70px;
-  display: grid;
-  width: 126px;
-  height: 126px;
-  place-content: center;
-  border: 1px solid var(--brass);
-  background: var(--charcoal-soft);
-  color: var(--brass-light);
-  text-align: center;
-}
-
-.standard__badge strong {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 0.9;
-}
-
-.standard__badge span {
-  margin-top: 8px;
-  font-size: 0.6rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
 .standard h2 {
   margin-bottom: 35px;
   color: var(--white);
@@ -597,6 +576,61 @@ summary:focus-visible {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.2rem;
   font-style: italic;
+}
+
+/* Before and after gallery */
+.before-after {
+  background: var(--paper);
+}
+
+.before-after__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.comparison-card {
+  padding: 26px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.34);
+}
+
+.comparison-card h3 {
+  margin-bottom: 22px;
+  font-size: clamp(1.4rem, 2vw, 1.85rem);
+}
+
+.comparison-card__images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.image-placeholder {
+  display: grid;
+  min-height: 210px;
+  align-content: center;
+  padding: 20px 12px;
+  border: 1px dashed rgba(35,35,30,0.32);
+  background:
+    linear-gradient(135deg, transparent 49.5%, rgba(139,98,43,0.12) 50%, transparent 50.5%),
+    var(--concrete);
+  text-align: center;
+}
+
+.image-placeholder span {
+  color: #8b622b;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.image-placeholder p {
+  margin: 8px 0 0;
+  color: #5c5b52;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.92rem;
 }
 
 /* Service area */
@@ -652,6 +686,21 @@ summary:focus-visible {
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.15rem, 2vw, 1.4rem);
   font-style: italic;
+}
+
+.service-area__map {
+  margin-top: 48px;
+  overflow: hidden;
+  border: 1px solid rgba(35,35,30,0.22);
+  background: #c9c4b8;
+  box-shadow: 0 18px 40px rgba(35,35,30,0.08);
+}
+
+.service-area__map iframe {
+  display: block;
+  width: 100%;
+  height: 430px;
+  border: 0;
 }
 
 /* Reviews */
@@ -893,6 +942,7 @@ summary:focus-visible {
 
 .contact footer {
   display: flex;
+  flex-wrap: wrap;
   min-height: 125px;
   align-items: center;
   justify-content: space-between;
@@ -909,6 +959,35 @@ summary:focus-visible {
   line-height: 1.65;
   text-align: right;
   text-transform: uppercase;
+}
+
+.footer-trust {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 24px 0 30px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.58);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  list-style: none;
+  text-align: left;
+}
+
+.footer-trust li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.footer-trust li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--brass-light);
+  content: "✓";
+  font-weight: 700;
 }
 
 .brand--footer .brand__mark {
@@ -986,6 +1065,18 @@ summary:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .before-after__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card {
+    max-width: 720px;
+  }
+
+  .footer-trust {
+    grid-template-columns: 1fr;
+  }
+
   .contact__details > div + div {
     border-top: 1px solid rgba(255,255,255,0.16);
     border-left: 0;
@@ -1045,6 +1136,7 @@ summary:focus-visible {
   .why h2,
   .services h2,
   .standard h2,
+  .before-after h2,
   .service-area h2,
   .reviews h2,
   .faq h2,
@@ -1084,17 +1176,6 @@ summary:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .standard__badge {
-    right: 14px;
-    bottom: 52px;
-    width: 104px;
-    height: 104px;
-  }
-
-  .standard__badge strong {
-    font-size: 2.4rem;
-  }
-
   .city-list {
     gap: 8px;
   }
@@ -1102,6 +1183,22 @@ summary:focus-visible {
   .city-list li {
     padding: 8px 11px;
     font-size: 0.66rem;
+  }
+
+  .service-area__map iframe {
+    height: 330px;
+  }
+
+  .comparison-card {
+    padding: 20px;
+  }
+
+  .comparison-card__images {
+    grid-template-columns: 1fr;
+  }
+
+  .image-placeholder {
+    min-height: 180px;
   }
 
   .faq summary {
