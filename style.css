@@ -245,14 +245,35 @@ summary:focus-visible {
   position: absolute;
   top: 52%;
   left: 50%;
+  display: grid;
   width: var(--shell);
+  grid-template-columns: minmax(0, 1fr) clamp(300px, 27vw, 380px);
+  align-items: center;
+  gap: clamp(36px, 5vw, 72px);
   transform: translate(-50%, -46%);
 }
 
+.hero__copy {
+  min-width: 0;
+}
+
+.hero__logo {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  aspect-ratio: 1;
+  justify-self: end;
+  object-fit: contain;
+  filter:
+    drop-shadow(0 20px 30px rgba(0,0,0,0.4))
+    drop-shadow(0 0 20px rgba(201,155,88,0.08));
+}
+
 .hero h1 {
-  max-width: 980px;
+  max-width: 760px;
   margin-bottom: 22px;
-  font-size: clamp(3.75rem, 7.1vw, 6.8rem);
+  font-size: clamp(3.6rem, 5.4vw, 5.6rem);
   letter-spacing: -0.055em;
 }
 
@@ -1010,7 +1031,7 @@ summary:focus-visible {
   }
 
   .hero {
-    min-height: 740px;
+    min-height: 900px;
   }
 
   .hero__topline > p,
@@ -1019,7 +1040,15 @@ summary:focus-visible {
   }
 
   .hero__content {
-    top: 53%;
+    top: 54%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hero__logo {
+    order: -1;
+    width: 200px;
+    justify-self: start;
   }
 
   .why__grid,
@@ -1093,7 +1122,7 @@ summary:focus-visible {
   }
 
   .hero {
-    min-height: 760px;
+    min-height: 850px;
     height: 100svh;
   }
 
@@ -1111,8 +1140,13 @@ summary:focus-visible {
     transform: translate(-50%, -46%);
   }
 
+  .hero__logo {
+    width: clamp(155px, 42vw, 185px);
+    justify-self: center;
+  }
+
   .hero h1 {
-    font-size: clamp(3rem, 14.5vw, 4.4rem);
+    font-size: clamp(2.35rem, 9.8vw, 3rem);
   }
 
   .hero__lead {
