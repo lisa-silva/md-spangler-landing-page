@@ -516,8 +516,9 @@ summary:focus-visible {
 .standard__visual img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
 }
 
 .standard__visual figcaption {
