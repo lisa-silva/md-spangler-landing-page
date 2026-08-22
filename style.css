@@ -1016,6 +1016,29 @@ summary:focus-visible {
   font-weight: 700;
 }
 
+.contact footer > .footer-attribution {
+  width: 100%;
+  max-width: none;
+  margin: -12px 0 24px;
+  color: rgba(255,255,255,0.3);
+  font-size: 0.58rem;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: none;
+}
+
+.footer-attribution a {
+  color: rgba(255,255,255,0.46);
+  text-decoration-color: rgba(255,255,255,0.24);
+  text-underline-offset: 3px;
+}
+
+.footer-attribution a:hover,
+.footer-attribution a:focus-visible {
+  color: rgba(255,255,255,0.7);
+}
+
 .brand--footer .brand__mark {
   width: 38px;
   height: 38px;
@@ -1272,6 +1295,11 @@ summary:focus-visible {
 
   .contact footer > p {
     text-align: left;
+  }
+
+  .contact footer > .footer-attribution {
+    margin: -6px 0 0;
+    text-align: center;
   }
 }
 
