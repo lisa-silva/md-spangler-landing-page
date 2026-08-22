@@ -1039,6 +1039,93 @@ summary:focus-visible {
   color: rgba(255,255,255,0.7);
 }
 
+.footer-attribution span {
+  margin: 0 0.35em;
+  color: rgba(255,255,255,0.2);
+}
+
+.privacy-page {
+  min-height: 100vh;
+  background: var(--paper);
+}
+
+.privacy-header {
+  padding: 22px 0;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.privacy-header__inner {
+  display: flex;
+  width: var(--shell);
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-inline: auto;
+}
+
+.privacy-header__back {
+  color: rgba(255,255,255,0.65);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.privacy-header__back:hover {
+  color: var(--brass-light);
+}
+
+.privacy-content {
+  width: min(760px, calc(100% - 48px));
+  margin-inline: auto;
+  padding: 88px 0 100px;
+}
+
+.privacy-content h1 {
+  margin-bottom: 16px;
+  color: var(--charcoal);
+  font-size: clamp(2.7rem, 7vw, 5.2rem);
+  letter-spacing: -0.045em;
+}
+
+.privacy-content h2 {
+  margin: 46px 0 14px;
+  color: var(--charcoal);
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.privacy-content p,
+.privacy-content li {
+  color: #55554d;
+}
+
+.privacy-content ul {
+  padding-left: 1.25rem;
+}
+
+.privacy-content a {
+  color: #76501f;
+  text-underline-offset: 3px;
+}
+
+.privacy-effective {
+  margin-bottom: 44px;
+  color: #77766d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.privacy-note {
+  margin-top: 54px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+}
+
 .brand--footer .brand__mark {
   width: 38px;
   height: 38px;
@@ -1300,6 +1387,19 @@ summary:focus-visible {
   .contact footer > .footer-attribution {
     margin: -6px 0 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .privacy-header__inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .privacy-content {
+    width: min(100% - 36px, 760px);
+    padding: 64px 0 76px;
   }
 }
 
