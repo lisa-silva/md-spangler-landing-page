@@ -761,18 +761,47 @@ summary:focus-visible {
   box-shadow: 0 18px 40px rgba(35, 35, 30, 0.08);
 }
 
-.review-card__stars {
-  margin-bottom: 24px;
-  color: #8b622b;
-  font-size: 1rem;
-  letter-spacing: 0.16em;
+.review-card__customer {
+  margin-bottom: 20px;
+}
+
+.review-card__customer strong,
+.review-card__customer span {
+  display: block;
+}
+
+.review-card__customer strong {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.review-card__customer span,
+.review-card__project,
+.review-card__source {
+  color: #66645b;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.review-card__project {
+  margin: 0 0 18px;
 }
 
 .review-card blockquote {
+  flex: 1;
   margin: 0;
   color: var(--ink);
   font-size: 1.08rem;
   line-height: 1.65;
+}
+
+.review-card__source {
+  margin: 24px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
 }
 
 /* FAQ */
