@@ -91,14 +91,6 @@ em {
   text-transform: uppercase;
 }
 
-.eyebrow::before {
-  width: 34px;
-  height: 1px;
-  flex: 0 0 auto;
-  background: currentColor;
-  content: "";
-}
-
 .eyebrow--dark {
   color: #8b622b;
 }
@@ -140,6 +132,13 @@ summary:focus-visible {
 }
 
 /* Brand */
+.brand__logo {
+  display: block;
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
