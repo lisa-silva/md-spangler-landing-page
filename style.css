@@ -920,6 +920,7 @@ summary:focus-visible {
   justify-content: center;
 }
 
+.contact h1,
 .contact h2 {
   margin-bottom: 24px;
   color: var(--white);
